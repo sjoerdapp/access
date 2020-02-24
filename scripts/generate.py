@@ -25,7 +25,7 @@ if __name__ == '__main__':
         'LengthRatioPreprocessor': {'target_ratio': 0.95},
         'LevenshteinPreprocessor': {'target_ratio': 0.75},
         'WordRankRatioPreprocessor': {'target_ratio': 0.75},
-        'SentencePiecePreprocessor': {'vocab_size': 10000},
+        'SentencePiecePreprocessor': {'vocab_size': 32000},
     }
     preprocessors = get_preprocessors(recommended_preprocessors_kwargs)
     simplifier = get_fairseq_simplifier(best_model_dir, beam=8)
